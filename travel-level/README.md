@@ -2,7 +2,7 @@ This application was developed on the fork of https://github.com/tenpages/us-lev
 
 Maps available at https://vvkrddy.github.io/apps/travel-level/.
 
-Find license at https://vvkrddy.github.io/apps/travel-level/license.
+Find license at https://github.com/vvkrddy/travel-level/blob/main/LICENSE.
 
 ### Instructions to use
 
