@@ -314,7 +314,6 @@ const gLTE = _ => {
     let lS = locStor.getItem(lSCK);
     // console.log(lS.length) # to-do: error handling
     // if(/^[\d|-]{49}$/.test(lS)) lS+='0'; // handling legacy localstorage
-    console.log(lS)
     if (!pGAR.test(lS)) return;
     const levels = lS.split('');
     gAPE().forEach((elementt, subScript) => {
@@ -523,13 +522,11 @@ const sI = _ => {
     var scoreTxt;
     var checkbox = document.getElementById("groupToggle");
     if (checkbox.checked) {
-        console.log(widthh, highh, "Yes")
         scoreTxt = `<text x="10" y="30" font-size="60" font-family="Arial" fill="black" transform="translate(1200, 1050) scale(4)">${totalpp.innerHTML}</text>`;
-        console.log(widthh, highh)
         guide = `		<svg version="1.1" class="levelGuide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 2755.1 1500.5" style="enable-background:new 2755.1 1500.5"
     xml:space="preserve">
-    <g id="Layer_4" transform="translate(0, -570) scale(2)">
+    <g id="Layer_4" transform="translate(0, -850) scale(2)" fill-opacity=".4">
         <path class="st6" d="M56.9,933.1H273c1.7,0,3,1.3,3,3v26c0,1.7-1.3,3-3,3H56.9c-1.7,0-3-1.3-3-3v-26
 C53.9,934.5,55.3,933.1,56.9,933.1z" />
         <path class="st2" d="M56.93,870.03h216.1c1.66,0,3,1.34,3,3v26c0,1.66-1.34,3-3,3H56.93c-1.66,0-3-1.34-3-3v-26
@@ -591,7 +588,7 @@ C207.33,910.57,208.67,909.23,210.33,954.23z" />
     </g>
 
 </svg>`
-        docT = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 2755.1 1500.5" width="${widthh}px" height="${highh}px" >        
+        docT = `<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 2755.1 1500.5" width="${widthh}" height="${highh}" >        
     ${graphicc.innerHTML}
     ${guide}
     ${scoreTxt}
@@ -599,9 +596,8 @@ C207.33,910.57,208.67,909.23,210.33,954.23z" />
     }
     else {
         scoreTxt = `<text x="10" y="30" font-size="60" font-family="Arial" fill="black" transform="translate(1200, 1050) scale(4)">${totalpp.innerHTML}</text>`;
-        console.log(widthh, highh)
 
-        docT = `<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 2755.1 1500.5" width="${widthh}px" height="${highh}px" >        
+        docT = `<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 2755.1 1500.5" width="${widthh}" height="${highh}" >        
         ${graphicc.innerHTML}
         
         ${scoreTxt}
@@ -610,7 +606,7 @@ C207.33,910.57,208.67,909.23,210.33,954.23z" />
     const dd = createNewGraphic(docT);
     URLimEl(dd, picturee => {
 
-        ctxt.fillStyle = '#F9CDC7'; // Use the same background color
+        ctxt.fillStyle = '#e4ebe5'; // Use the same background color
         // ctxt.fillStyle = hTMLE.style.backgroundColor; //'#b4b4ef';
         ctxt.fillRect(
             0, 0,
@@ -629,8 +625,8 @@ C207.33,910.57,208.67,909.23,210.33,954.23z" />
             picturee,
             0, 0,
             widthh, highh,
-            0,(widthh - highh) * comparee / 2,
-        2755, 1500
+            0, (widthh - highh) * comparee / 2,
+            2755, 1500
         );
 
         const pointt = gAPR().reduce((completee, currentt) => {
@@ -640,7 +636,7 @@ C207.33,910.57,208.67,909.23,210.33,954.23z" />
 
         panels.toBlob(eD => {
             const addresss = URL.createObjectURL(eD);
-            dF(addresss, `India Level ${pointt}.png`);
+            dF(addresss, `World Level ${pointt}.png`);
             opIm.style.display = '';
             opIm.querySelector('img').src = addresss;
         }, 'image/png');
