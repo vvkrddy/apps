@@ -526,7 +526,7 @@ const sI = _ => {
         guide = `		<svg version="1.1" class="levelGuide" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 2755.1 1500.5" style="enable-background:new 2755.1 1500.5"
     xml:space="preserve">
-    <g id="Layer_4" transform="translate(0, -850) scale(2)" fill-opacity=".4">
+    <g id="Layer_4" transform="translate(0, -850) scale(2)" fill-opacity=".6">
         <path class="st6" d="M56.9,933.1H273c1.7,0,3,1.3,3,3v26c0,1.7-1.3,3-3,3H56.9c-1.7,0-3-1.3-3-3v-26
 C53.9,934.5,55.3,933.1,56.9,933.1z" />
         <path class="st2" d="M56.93,870.03h216.1c1.66,0,3,1.34,3,3v26c0,1.66-1.34,3-3,3H56.93c-1.66,0-3-1.34-3-3v-26
