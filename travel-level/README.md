@@ -8,7 +8,7 @@ Find license at https://github.com/vvkrddy/travel-level/blob/main/LICENSE.
 
 - Click on any region to show clickable categories for selection.
 - Scroll-zoom is available for the world map only. This is useful to find and click on smaller regions.
-- On zooming, to get back to initial zoomed-out layout, click on ZOOM OUT button. This does not reset selection.
+- On zooming, to get back to initial zoomed-out layout, click on RESET ZOOM button. This does not reset selection.
 - If you are unable to find a region on map, please let me know. It could be possible that the border could be wide enough that the enclosed region is not visible anymore.
 
 > It is a geography exercise as the names of regions are not shown until a user clicks on it.
